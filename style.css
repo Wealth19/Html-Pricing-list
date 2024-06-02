@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    font-family: 'Sono', sans-serif;
+}
+div.main-container {
+    /* background-color: violet; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 2em;
+}
+.pricing-plan {
+    flex: 1;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    text-align: center;
+}
+.plan-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.plan-price {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.plan-features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.plan-features li:hover {
+    margin-bottom: 20px;
+    background-color: blue;
+    color: #fff;
+}
+
+button {
+    border: none;
+    background-color: orange;
+    color: #fff;
+    border-radius: 5px;
+}
+/*###############  Media Querty #######################*/
+@media (max-width: 800px) {
+    div.main-container {
+        flex-direction: column;
+        height: 100%;
+    }
+    
+}
